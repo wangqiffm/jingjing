@@ -22,3 +22,16 @@ Route::get('foo', function () {
   return 'Hello World';
 });
 Route::get('/user', 'UserController@index');
+
+
+// inside the 'admin' prefix, I presume
+Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middleware' => ['web', 'admin']], function () {
+  CRUD::resource('permission', '\Backpack\PermissionManager\app\Http\Controllers\PermissionCrudController');
+  CRUD::resource('role', '\Backpack\PermissionManager\app\Http\Controllers\RoleCrudController');
+  CRUD::resource('user', 'Admin\UserCrudController');
+//  Route::auth();
+//  Route::get('logout', [
+//    'uses'=> 'Auth\LoginController@logout',
+//    'as' => 'auth.logout',
+//  ]);
+});

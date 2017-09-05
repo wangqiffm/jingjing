@@ -167,6 +167,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Backpack\PermissionManager\PermissionManagerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -177,6 +178,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // Laravel IDE helper
+
     ],
 
     /*
