@@ -30,8 +30,11 @@ Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middle
   CRUD::resource('role', '\Backpack\PermissionManager\app\Http\Controllers\RoleCrudController');
   CRUD::resource('user', 'Admin\UserCrudController');
 //  Route::auth();
-//  Route::get('logout', [
-//    'uses'=> 'Auth\LoginController@logout',
-//    'as' => 'auth.logout',
-//  ]);
+  Route::post('register', [
+    'uses'=> 'Auth\RegisterController@register',
+  ]);
+  Route::get('register', [
+    'uses'=> 'Auth\RegisterController@showRegistrationForm ',
+    'as' => 'register'
+  ]);
 });

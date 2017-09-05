@@ -29,4 +29,9 @@ class RegisterController extends \Backpack\Base\app\Http\Controllers\Auth\Regist
       'password' => bcrypt($data['password']),
     ]);
   }
+
+  public function showRegistrationForm()
+  {
+    return redirect()->to('login')->with('warning', 'Registration is disabled.');
+  }
 }
