@@ -178,6 +178,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // Laravel IDE helper
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
 
     ],
 

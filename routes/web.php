@@ -22,6 +22,11 @@ Route::get('foo', function () {
   return 'Hello World';
 });
 Route::get('/user', 'UserController@index');
+Route::post('/contact/send', 'PageController@contact')->name('contact.send');
+//Route::get('/', 'PageController@index');
+Route::resource('articles', 'ArticleController');
+
+
 
 
 // inside the 'admin' prefix, I presume
@@ -37,4 +42,8 @@ Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middle
     'uses'=> 'Auth\RegisterController@showRegistrationForm ',
     'as' => 'register'
   ]);
+
+  // Backpack\CRUD: Define the resources for the entities you want to CRUD.
+  CRUD::resource('tag', 'Admin\TagCrudController');
+  CRUD::resource('article', 'Admin\ArticleCrudController');
 });

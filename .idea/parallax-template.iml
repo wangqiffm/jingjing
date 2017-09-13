@@ -3,6 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/vendor/almasaeed2010/adminlte" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/anhskohbo/no-captcha" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/backpack/base" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/backpack/crud" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/backpack/generators" />
@@ -26,6 +27,8 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/fideloper/proxy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/filp/whoops" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/intervention/image" />
@@ -106,6 +109,7 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/almasaeed2010/adminlte" />
+          <root url="file://$MODULE_DIR$/vendor/anhskohbo/no-captcha" />
           <root url="file://$MODULE_DIR$/vendor/backpack/base" />
           <root url="file://$MODULE_DIR$/vendor/backpack/crud" />
           <root url="file://$MODULE_DIR$/vendor/backpack/generators" />
@@ -129,6 +133,8 @@
           <root url="file://$MODULE_DIR$/vendor/fideloper/proxy" />
           <root url="file://$MODULE_DIR$/vendor/filp/whoops" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
           <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
           <root url="file://$MODULE_DIR$/vendor/intervention/image" />
@@ -205,6 +211,7 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/almasaeed2010/adminlte" />
+          <root url="file://$MODULE_DIR$/vendor/anhskohbo/no-captcha" />
           <root url="file://$MODULE_DIR$/vendor/backpack/base" />
           <root url="file://$MODULE_DIR$/vendor/backpack/crud" />
           <root url="file://$MODULE_DIR$/vendor/backpack/generators" />
@@ -228,6 +235,8 @@
           <root url="file://$MODULE_DIR$/vendor/fideloper/proxy" />
           <root url="file://$MODULE_DIR$/vendor/filp/whoops" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+          <root url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
           <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
           <root url="file://$MODULE_DIR$/vendor/intervention/image" />
