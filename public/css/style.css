@@ -65,3 +65,15 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+#source-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  font-weight: 700;
+}
+
+.bs-component {
+  position: relative;
+}

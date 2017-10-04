@@ -27,12 +27,46 @@
         <div class="parallax"><img src="img/a.jpg" alt="Unsplashed background img 1"></div>
     </div>
 
+    <div class="slider parallax-container valign-wrapper">
+        <ul class="slides">
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                <div class="caption left-align">
+                    <h3>Left Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                <div class="caption right-align">
+                    <h3>Right Aligned Caption</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
     <div class="container">
         <div class="section">
 
             <div class="row">
 
-                <div class="col s12 center">
+                <div class="col s12 center bs-component">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>公司简介</h4>
                     <p class="left-align light caption">德达商业服务是一家德国公司，专长德国房地产投资、德国创业、法人签证、欧盟蓝卡和德国工作签证等方面的咨询。
@@ -45,6 +79,7 @@
 
 
             <!--   Icon Section   -->
+
             <div class="row">
                 <div class="col s12 m4">
                     <div class="icon-block">
@@ -111,7 +146,7 @@
 
             <div class="row">
 
-                <div class="col s12 m6">
+                <div class="col s12 m6 bs-component">
                     <div class="card sticky-action large">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/service1.jpg">

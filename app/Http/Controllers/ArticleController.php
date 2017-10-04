@@ -52,8 +52,15 @@ class ArticleController extends Controller {
    *
    * @return \Illuminate\Http\Response
    */
-  public function show(Article $article) {
+  public function show($id) {
     //
+    $article = Article::with(['tags'])->findOrFail($id);
+
+    return response()->json([
+      'error' => FALSE,
+      'products' => $article,
+      'status_code' => 200,
+    ]);
   }
 
   /**
