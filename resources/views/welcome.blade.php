@@ -77,7 +77,7 @@
 
             <!--   Icon Section   -->
             <div class="row no-margin-bottom">
-                <div class="col s12 m4 offset-m1">
+                <div class="col s12 l4 offset-l1">
                     <div class="row ">
 
                         <div class="icon-block no-padding s12 center-align">
@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="col s12 m4 offset-m1">
+                <div class="col s12 l4 offset-l1">
                     <div class="row ">
 
 
