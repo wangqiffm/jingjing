@@ -18,7 +18,7 @@
             </div>
 
         </div>
-        <div class="parallax"><img src="img/slide1.webp" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="img/slide1.png" alt="Unsplashed background img 1"></div>
     </div>
 
     {{--<div class="slider parallax-container valign-wrapper">--}}
@@ -81,11 +81,11 @@
                     <div class="row ">
 
                         <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/front-img-1.webp')}}"></p>
+                            <p><img class="responsive-img" src="{{asset('img/front-img-1.png')}}"></p>
                         </div>
 
                         <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/front-img-2.webp')}}"> </p>
+                            <p><img class="responsive-img" src="{{asset('img/front-img-2.png')}}"> </p>
                         </div>
 
 
