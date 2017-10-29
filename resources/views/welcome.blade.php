@@ -10,18 +10,12 @@
     <div id="index-banner" class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
 
-
-            <br><br>
-            <h1 class="header center white-text text-lighten-2"><span class=" bg-pad">德国是您进驻欧洲的首选</span></h1>
             <div class="row center">
-                <h5 class="header col s12 light"><span class=" bg-pad">德达商业服务愿为您在德国的投资创业提供最专业、最全面的服务。</span></h5>
-            </div>
-            <div class="row center">
-                <a href="#!" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-            </div>
-            <br><br>
+                <h1 class="header col s12"><span class=" bg-pad">Hauptmenu</span></h1>
+                <p class="header col s12 m6 offset-m3 light bg-pad">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>
+                <h6 class="header col s12 "><a href="#!" class="btn-large waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>
 
-
+            </div>
 
         </div>
         <div class="parallax"><img src="img/slide1.webp" alt="Unsplashed background img 1"></div>
@@ -62,9 +56,9 @@
 
 
     <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="aboutus">
 
-            <div class="row">
+            <div class="row ">
 
                 <div class="col s12 center">
                     <h4><i class="mdi-content-send red-text text-darken-4">Über uns</i></h4>
