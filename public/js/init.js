@@ -1,7 +1,9 @@
 (function($){
     $( document ).ready(function() {
 
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+        closeOnClick: true
+    });
     $('.parallax').parallax();
     $(".dropdown-button").dropdown({
     	hover: true,
@@ -36,7 +38,9 @@
           $button.hide();
       });
 
-        $('.scrollspy').scrollSpy();
+        $('.scrollspy').scrollSpy({
+            scrollOffset:60
+        });
 
 
         $('select').material_select();

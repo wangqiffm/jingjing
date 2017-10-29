@@ -11,8 +11,9 @@
 <ul id="nav-mobile" class="side-nav">
     <li><a href="{{ url('/') }}">Home</a></li>
     <li><a href="#!">Speisekarte</a></li>
-    <li><a href="#!">Reservierung</a></li>
-    <li><a href="{{ url('contact') }}">联系我们</a></li>
+    <li><a href="#reservation">Reservierung</a></li>
+    <li><a href="#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
+    <li><a href="{{ url('/') }}">Kontakt</a></li>
 
 </ul>
 
