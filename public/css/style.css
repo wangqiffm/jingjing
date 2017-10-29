@@ -6,6 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300|Libre+Baskerville:400i|Proza+Libre|Cormorant+Garamond');
+
+
 html {
   font-family: "Roboto", "Microsoft YaHei";
 }
@@ -30,7 +33,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 420px;
+  min-height: 620px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -40,13 +43,17 @@ p {
   }
 
 @media only screen and (max-width : 992px) {
+  .parallax-container {
+    min-height: 420px;
+  }
   .parallax-container .section {
     position: absolute;
-    top: 40%;
+    top: 10%;
   }
   #index-banner .section {
     top: 10%;
   }
+
 }
 
 @media only screen and (max-width : 600px) {
@@ -76,4 +83,79 @@ footer.page-footer {
 
 .bs-component {
   position: relative;
+}
+
+
+/*////*/
+
+p{
+  letter-spacing: 0.04em;
+  font-family:  'Proza Libre',  "Microsoft YaHei", serif;
+  /*font-size: 14px;*/
+}
+.navbar{
+  font-family:  'Proza Libre',  "Microsoft YaHei", serif;
+  font-weight: 400;
+}
+
+.icon-block{
+  padding-bottom: 10px;
+  position: relative;
+}
+#header-address{
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+#reservation .valign-bg{
+  background: url('../img/front-img-4.jpg') no-repeat;
+  padding: 10px;
+  /*background-size: 100% 100%;*/
+  background-size: cover;
+  height: 600px;
+}
+
+#reservation  .reservation-box {
+  height: 100%;
+}
+
+.bg-pad {
+  padding: 0.5rem 2rem;
+  color: #000;
+  background: rgba(255, 255, 255,0.5);
+
+}
+
+.no-margin-bottom {
+  margin-bottom: 0; !important;
+}
+
+
+h4, h5{
+  font-family: 'Libre Baskerville', serif;
+}
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 100%; }
+/* 2 columns wide */
+.grid-item{
+}
+.grid-item--width2 { width: 100%; }
+
+@media only screen and (min-width : 992px) {
+
+  .header{
+    position: relative;
+    padding-top: 40px;
+  }
+  /* fluid 5 columns */
+  .grid-sizer,
+  .grid-item { width: 50%; }
+  /* 2 columns wide */
+  .grid-item{
+  }
+  .grid-item--width2 { width: 50%; }
 }
