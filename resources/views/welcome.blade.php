@@ -312,9 +312,9 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <h5 class="header col s12 light">博马森投资创业项目</h5>
-                    <h6 class="header col s12 light">投入少，周期短，可掌控，是一个双赢的投资创业移民方案</h6>
-                    <h6 class="header col s12 light"><a href="#!" class="btn waves-effect waves-light orange lighten-1">Get Started</a></h6>
+                    <h3 class="header col s12 light">Hauptmenu</h3>
+                    <p class="header col s6 offset-s3 light">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>
+                    <h6 class="header col s12 light"><a href="#!" class="btn waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>
 
                 </div>
             </div>
