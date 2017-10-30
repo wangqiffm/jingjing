@@ -22,6 +22,11 @@
 
 @show
 
+@if(session()->has('message.level'))
+    <div class="alert alert-{{ session('message.level') }}">
+        {!! session('message.content') !!}
+    </div>
+@endif
 
     @yield('content')
 
@@ -38,7 +43,40 @@
 <script src="{{asset('noUiSlider')}}/nouislider.min.js"></script>
 
 <script src="js/init.js"></script>
+<script>
 
+    $(function(){
+
+
+        $('#reservation-form').on('submit',function(e){
+            $.ajaxSetup({
+                header:$('meta[name="csrf-token"]').attr('content')
+            });
+            console.log($(this));
+
+
+            $.ajax({
+
+                type:"POST",
+                url:'{{route('reservation.send')}}',
+                data:$(this).serialize(),
+                dataType: 'json',
+                success: function(data){
+                    console.log(data);
+                    $.when($('#reservation .card').fadeOut(500))
+                        .done(function() {
+                            $('#reservation .hide').toggleClass('hide',500);
+                        });
+
+                },
+                error: function(data){
+
+                }
+            });
+            e.preventDefault();
+        });
+    });
+</script>
 
 </body>
 </html>

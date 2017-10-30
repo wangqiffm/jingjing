@@ -8,10 +8,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ReservationSent;
+use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ContactFormRequest;
 use App\Tag;
+use Illuminate\Support\Facades\Mail;
 
 class PageController extends Controller
 {
@@ -56,5 +60,29 @@ class PageController extends Controller
 //    return \Redirect::url('/contact')
 //      ->with('message', 'Thanks for contacting us!');
 
+  }
+
+  public function reservation(Request $request)
+  {
+//    $order = Order::findOrFail($orderId);
+
+//    dump($request->input('reservation'));
+
+    $send_reservation_to = config('mail.from.address');
+
+
+
+    Mail::to($send_reservation_to)->send(new ReservationSent($request->input('reservation')));
+    $text = 'Vielen Dank für Ihre Reservierung. Wir werden Ihre Anfrage schnellstmöglich zu bearbeiten.
+  Bitte beachten Sie, dass Ihre Reservierung erst dann Gültigkeit hat, wenn Sie von uns eine schriftliche Bestätigung erhalten haben.
+
+  Wir freuen uns darauf, Sie schon bald als Gast in unserem Hause zu begrüßen.
+
+  Ihr Team vom Jingjing Asia Restaurant';
+    return response()->json([
+      'message' => $text,
+      'state' => 'CA'
+    ])->withCallback($request->input('callback'));
+//    return redirect('/')->with('message.content', $text)->with('message.level', 'info');
   }
 }

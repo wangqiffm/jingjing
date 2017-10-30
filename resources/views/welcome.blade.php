@@ -215,38 +215,76 @@
 
         </div>
 
-        <div class="section">
-            <div class="row scrollspy" id="reservation">
+        <div class="section scrollspy" id="reservation">
+            <div class="row">
                 <div class="col s12 m9 offset-m1 valign-bg ">
 
                     {{--reservation-box--}}
                     <div class="valign-wrapper row reservation-box">
+                        <div class="col card-panel teal s10 pull-s1 m6 pull-m3 l4 pull-l4 hide">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+                        </div>
+
                         <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
-                            <form>
+                            <form class="" id="reservation-form" action="{{ route("reservation.send") }}" method="post">
+                                {{ csrf_field() }}
                                 <div class="card-content">
                                     <span class="card-title"><h5 class="red-text text-darken-4">Reservierung</h5></span>
                                     <div class="row">
 
                                         <div class="input-field col s12">
-                                            <select name="reservation[personen]">
+                                            <select name="reservation[people]">
                                                 <option value="1" selected>1 Person</option>
                                                 @for ($i = 2; $i <= 20; $i++)
                                                     <option value="{{ $i }}">{{ $i }} Personen</option>
                                                 @endfor
                                             </select>
 
-                                            <label for="reservation[personen]">Personen<label>
+                                            <label for="reservation[people]">Wie viele Personen ?<label>
                                         </div>
 
                                         <div class="input-field col s12">
                                             <input placeholder="Placeholder" type="text" name="reservation[date]" class="datepicker">
-                                            <label for="reservation[date]">Datum</label>
+                                            <label for="reservation[date]">An welchem Tag ?</label>
                                         </div>
+
+                                        <div class="input-field col s12">
+                                          <?php
+
+                                          $options = [];
+
+                                          $dt = Carbon\Carbon::create(2012, 1, 31, 11,30,0);
+                                          $end = Carbon\Carbon::create(2012, 1, 31, 22,0,0);
+                                          while($dt->lessThan($end)){
+                                            $options[$dt->format('H:i')] = $dt->format('H:i');
+                                            $dt->addMinutes(15);
+                                          }
+                                          ?>
+                                            <select name="reservation[time]">
+                                                @foreach($options as $key => $option)
+                                                    <option value="{{ $key }}">{{ $option }}</option>
+                                                @endforeach
+                                            </select>
+                                            <label for="reservation[time]">Uhrzeit</label>
+                                        </div>
+
+                                        <div class="input-field col s6">
+                                            <input placeholder="Name" type="text" name="reservation[name]" class="">
+                                            <label for="reservation[name]">Ihr Name</label>
+                                        </div>
+
+                                        <div class="input-field col s6">
+                                            <input placeholder="Telefon" type="text" name="reservation[phone]" class="">
+                                            <label for="reservation[phone]">Telefon</label>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="card-action right-align">
-                                    <input type="reset" id="reset" class="btn-flat grey-text waves-effect">
-                                    <input type="submit" class="btn green waves-effect waves-light" value="Senden">
+                                    <input type="reset" id="reset" class="btn-flat grey-text waves-effect no-padding">
+                                    <input type="submit" class="btn green waves-effect waves-light no-padding" value="Senden">
                                 </div>
                             </form>
                         </div>

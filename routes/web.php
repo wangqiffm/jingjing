@@ -21,8 +21,11 @@ Route::get('/contact', function () {
 Route::get('foo', function () {
   return 'Hello World';
 });
+
 Route::get('/user', 'UserController@index');
+
 Route::post('/contact/send', 'PageController@contact')->name('contact.send');
+Route::post('/reservation/send', 'PageController@reservation')->name('reservation.send');
 //Route::get('/', 'PageController@index');
 Route::resource('articles', 'ArticleController');
 
