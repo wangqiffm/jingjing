@@ -22,10 +22,11 @@ class ContactFormRequest extends FormRequest {
    */
   public function rules() {
     return [
-      'g-recaptcha-response' => 'bail|required|captcha',
-      'lastname' => 'required',
-      'email' => 'required|email',
-      'message' => 'required',
+        'captcha' => 'required|captcha',
+//      'g-recaptcha-response' => 'bail|required|captcha',
+//      'lastname' => 'required',
+//      'email' => 'required|email',
+//      'message' => 'required',
     ];
   }
 
@@ -36,7 +37,8 @@ class ContactFormRequest extends FormRequest {
    */
   public function messages() {
     return [
-      'g-recaptcha-response.*' => "Please click reCaptcha",
+//      'g-recaptcha-response.*' => "Please click reCaptcha",
+        'captcha' => "Please enter captcha",
       'lastname.required' => 'Please enter your lastname.',
       'message.required' => 'Please leave us a message.',
       'email.*' => 'Please leave a valid email address.',

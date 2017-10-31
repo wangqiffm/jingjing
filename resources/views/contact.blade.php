@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Contact')
+@section('body_class', 'page')
 
 @section('sidebar')
     @parent
@@ -10,21 +11,12 @@
     <div id="index-banner" class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
 
-
-            <br><br>
-            <h1 class="header center white-text text-lighten-2">德国是您进驻欧洲的首选</h1>
+            <h1 class="header center white-text text-lighten-2">Wr würden uns freuen, von ihnen zu hören! </h1>
             <div class="row center">
-                <h5 class="header col s12 light">德达商业服务愿为您在德国的投资创业提供最专业、最全面的服务。</h5>
+                <h5 class="header col s12 light"> </h5>
             </div>
-            <div class="row center">
-                <a href="#!" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get
-                    Started</a>
-            </div>
-            <br><br>
-
-
         </div>
-        <div class="parallax"><img src="img/a.jpg" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="img/header_2.png" alt="Unsplashed background img 1"></div>
     </div>
 
     <div class="container">
@@ -98,7 +90,10 @@
                     </div>
                 </div>
 
-                {!! app('captcha')->display($attributes = [], $lang = null); !!}
+{{--                {!! app('captcha')->display($attributes = [], $lang = null); !!}--}}
+
+                <p>{!! captcha_img() !!}</p>
+                <p><input type="text" name="captcha"></p>
 
 
                 <div class="row center">

@@ -1,19 +1,14 @@
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">博马森投资创业项目</a></li>
 </ul>
 <ul id="dropdown2" class="dropdown-content">
-    <li><a href="#!">德国投资创业</a></li>
-    <li><a href="#!">欧盟蓝卡</a></li>
-    <li><a href="#!">商务咨询</a></li>
-    <li><a href="#!">商务中心</a></li>
 </ul>
 <ul id="nav-mobile" class="side-nav">
     <li><a href="{{ url('/') }}">Home</a></li>
     <li><a href="#!">Speisekarte</a></li>
-    <li><a href="#reservation">Reservierung</a></li>
-    <li><a href="#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
-    <li><a href="{{ url('/') }}">Kontakt</a></li>
+    <li><a href="{{ url('/') }}/#reservation">Reservierung</a></li>
+    <li><a href="{{ url('/') }}/#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
+    <li><a href="{{ url('contact') }}">Kontakt</a></li>
 
 </ul>
 
@@ -44,7 +39,7 @@
                 <li><a href="#!">Speisekarte</a></li>
                 <li><a href="#reservation">Reservierung</a></li>
                 <li><a href="#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
-                <li><a href="{{ url('/') }}">Kontakt</a></li>
+                <li><a href="{{ url('contact') }}">Kontakt</a></li>
                 {{--<li>--}}
                     {{--@if (Auth::check())--}}
                         {{--<a href="{{ url(config('backpack.base.route_prefix', 'admin') .'/dashboard') }}">{{ Auth::user()->name }}</a></li>--}}

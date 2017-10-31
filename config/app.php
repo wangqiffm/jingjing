@@ -180,6 +180,8 @@ return [
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', // Laravel IDE helper
         Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
 
+        // ...https://github.com/mewebstudio/captcha
+        Mews\Captcha\CaptchaServiceProvider::class,
     ],
 
     /*
@@ -228,6 +230,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        // ...https://github.com/mewebstudio/captcha
+        'Captcha' => 'Mews\Captcha\Facades\Captcha',
 
     ],
 

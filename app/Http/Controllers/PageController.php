@@ -54,6 +54,16 @@ class PageController extends Controller
 //        $message->to('wj@wjgilmore.com', 'Admin')->subject('TODOParrot Feedback');
 //      });
 
+//      $rules = ['captcha' => 'required|captcha'];
+//      $validator = Validator::make(Input::all(), $rules);
+//      if ($validator->fails())
+//      {
+//          echo '<p style="color: #ff0000;">Incorrect!</p>';
+//      }
+//      else
+//      {
+//          echo '<p style="color: #00ff30;">Matched :)</p>';
+//      }
 
     return redirect('contact')->with('status', 'Thanks for contacting us!');
 
@@ -70,7 +80,7 @@ class PageController extends Controller
 
     $send_reservation_to = config('mail.from.address');
 
-
+      $send_reservation_to = env('MAIL_TO');
 
     Mail::to($send_reservation_to)->send(new ReservationSent($request->input('reservation')));
     $text = 'Vielen Dank für Ihre Reservierung. Wir werden Ihre Anfrage schnellstmöglich zu bearbeiten.

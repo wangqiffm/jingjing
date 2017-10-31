@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
-
+@section('title', 'Willkommen - Welcome - 欢迎光临')
+@section('body_class', 'welcome')
 @section('sidebar')
     @parent
 @endsection
@@ -84,20 +84,42 @@
                             <p><img class="responsive-img" src="{{asset('img/front-img-1.png')}}"></p>
                         </div>
 
+
+
                         <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/front-img-2.png')}}"> </p>
+                            <p><img class="responsive-img" src="{{asset('img/a_captain_sushi_03.jpg')}}"> </p>
                         </div>
 
-
-                        <div class="icon-block no-padding s12 center-align">
-                            <h5 class="center red-text text-darken-4">Sonderöffnungszeiten</h5>
-                            <p class="light">
-                                23.12. 11:00-15:30;<br>
-                                24.12. nicht geöffnet;<br>
-                                25.12. 17:30-23:00;<br>
-                                26.12. 17:30-23:00
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class=" red-text text-darken-4">Sushi 10,80 €</h5>
+                            <p class="left-align light">
+                                Die kleinen appetitlichen Häppchen auch in unserer gemütlichen Sushibar. Wir servieren sämtliche Köstlichkeiten aus Heimservicekarte sowie traditionelle japanische Suppen und leckere heiße Gerichte.
                             </p>
                         </div>
+
+
+                        <div class="icon-block no-padding s12 center-align">
+                            <p><img class="responsive-img" src="{{asset('img/jingjingexpress_big.jpg')}}"></p>
+                        </div>
+
+
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class="red-text text-darken-4">Jingjing Express Flughafen</h5>
+                            <p class="light">
+                                The SQUAIRE am Flughafen<br>
+                                ATRIUM Ebene 3 west<br>
+
+                                60549 Frankfur am Main<br><br>
+
+
+                                Öffnungszeiten<br>
+                                Mo. - So. 10:30 - 22:00
+                            </p>
+                        </div>
+
+                        {{--<div class="icon-block no-padding s12 center-align">--}}
+                            {{--<p><img class="responsive-img" src="{{asset('img/front-img-2.png')}}"> </p>--}}
+                        {{--</div>--}}
 
                         {{--<div class="icon-block no-padding s12">--}}
                             {{--<h5 class="center red-text text-darken-4">Reservierung</h5>--}}
@@ -118,23 +140,30 @@
                     <div class="row ">
 
 
-                        <div class="icon-block no-padding s12 center-align">
-                            <h5 class="center red-text text-darken-4">Öffnungszeiten</h5>
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class=" red-text text-darken-4">Öffnungszeiten</h5>
                             <p class="light">
-                                Mo. - Fr. :11:00 - 23:00 <br>
-                                Sa.: 17:30- 23:00<br>
+                                Mo. - Fr. :11:00 - 23:00<br>
+                                Sa.: 17:30 - 23:00<br>
                                 So.: 11:00 - 23:00
+
                             </p>
                         </div>
 
 
                         <div class="icon-block no-padding s12 center-align">
-                            <h5 class="center red-text text-darken-4">Kontakt</h5>
+                            <p><img class="responsive-img" src="{{asset('img/front-img-3.jpg')}}"></p>
+                        </div>
+
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class="red-text text-darken-4">Hauptmenu</h5>
                             <p class="light">
-                                Tel.: +49(0)69/643 552 272<br>
-                                Fax: +49(0)69/643 552 369<br>
-                                E-Mail: jingjing-asia@live.com
+                                Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.
                             </p>
+                        </div>
+
+                        <div class="icon-block no-padding s12 center-align">
+                            <p><img class="responsive-img" src="{{asset('img/raum.jpg')}}"></p>
                         </div>
 
                         <div class="icon-block no-padding s12 center-align">
@@ -142,17 +171,34 @@
                         </div>
 
 
-                        <div class="icon-block no-padding s12 center-align">
-                            <h5 class="center red-text text-darken-4">Jingjing Express Flughafen</h5>
+
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class="red-text text-darken-4">Kontakt</h5>
                             <p class="light">
-                                Öffnungsteiten<br>
-                                Mo. - So. 10:30 - 22:00
+
+                                Jingjing Asia Restaurant<br>
+
+                                Atrium Ebene 5 West Fernbahnhof<br>
+                                THE SQUAIRE 13 AM FLUGHAFEN<br>
+                                60549 Frankfurt am Main<br>
+
+                                Tel.: +49(0)69/643 552 272<br>
+                                Fax: +49(0)69/643 552 369<br>
+                                E-Mail: jingjing-asia@live.com
                             </p>
                         </div>
 
 
-                        <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/jingjingexpress_big.jpg')}}"></p>
+
+
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class=" red-text text-darken-4">Sonderöffnungszeiten</h5>
+                            <p class="light">
+                                23.12. 11:00 - 15:30<br>
+                                24.12. nicht geöffnet<br>
+                                25.12. 17:30 - 23:00<br>
+                                26.12. 17:30 - 23:00
+                            </p>
                         </div>
 
 
@@ -217,7 +263,7 @@
 
         <div class="section scrollspy" id="reservation">
             <div class="row">
-                <div class="col s12 m9 offset-m1 valign-bg ">
+                <div class="col s12 valign-bg ">
 
                     {{--reservation-box--}}
                     <div class="valign-wrapper row reservation-box">
@@ -227,11 +273,33 @@
           </span>
                         </div>
 
+
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Vielen Dank für Ihre Reservierung</h4>
+                                <p>
+                                 Wir werden Ihre Anfrage schnellstmöglich zu bearbeiten.
+                                Bitte beachten Sie, dass Ihre Reservierung erst dann Gültigkeit hat, wenn Sie von uns eine schriftliche Bestätigung erhalten haben.
+
+                                Wir freuen uns darauf, Sie schon bald als Gast in unserem Hause zu begrüßen.
+
+                                Ihr Team vom Jingjing Asia Restaurant</p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Schließen</a>
+                            </div>
+                        </div>
+
+
                         <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
                             <form class="" id="reservation-form" action="{{ route("reservation.send") }}" method="post">
                                 {{ csrf_field() }}
                                 <div class="card-content">
+
+
                                     <span class="card-title"><h5 class="red-text text-darken-4">Reservierung</h5></span>
+
                                     <div class="row">
 
                                         <div class="input-field col s12">
@@ -284,7 +352,10 @@
                                 </div>
                                 <div class="card-action right-align">
                                     <input type="reset" id="reset" class="btn-flat grey-text waves-effect no-padding">
-                                    <input type="submit" class="btn green waves-effect waves-light no-padding" value="Senden">
+                                    <button id="send" class="btn green waves-effect waves-light " type="submit" name="action">Senden
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                    {{--<input id="send" type="submit" class="btn green waves-effect waves-light no-padding" value="Senden">--}}
                                 </div>
                             </form>
                         </div>
@@ -351,7 +422,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="img/service1.jpg" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img src="img/slide2.png" alt="Unsplashed background img 3"></div>
     </div>
 
 @endsection

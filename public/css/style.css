@@ -18,9 +18,7 @@ nav .brand-logo {
   color: #444;
 }
 
-p {
-  line-height: 2rem;
-}
+
 
 .caption{
   font-size: 1.25rem;
@@ -88,10 +86,24 @@ footer.page-footer {
 
 /*////*/
 
-p{
+#loader{
+}
+.page .parallax-container {
+  min-height: 380px;
+}
+
+.welcome p{
+  /*front page only*/
+  line-height: 2rem;
+
   letter-spacing: 0.04em;
   font-family:  'Proza Libre',  "Microsoft YaHei", serif;
   /*font-size: 14px;*/
+}
+.page-footer p{
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
 }
 .navbar{
   font-family:  'Proza Libre',  "Microsoft YaHei", serif;
@@ -120,6 +132,7 @@ p{
 
 #reservation  .reservation-box {
   height: 100%;
+  position: relative;
 }
 
 #reservation .card{
