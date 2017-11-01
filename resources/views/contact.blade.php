@@ -32,8 +32,12 @@
                             <div class="card-panel light-green darken-1">
                                 <div class="row">
                                     <div class="col l8 white-text">
-                                        <h5>Message sent</h5>
-                                        <h6>Thanks for contacting us!</h6>
+                                        <h5>Vielen Dank!</h5>
+                                        <p>Ihre Nachricht wurde erfolgreich gesendet. <br>
+                                            Wir kümmern uns gern um Ihre Anfrage und melden uns umgehend bei Ihnen.<br><br>
+
+                                            Herzliche Grüße<br>
+                                            Ihr Team Jingjing Asia</p>
                                     </div>
                                 </div>
                             </div>
@@ -62,21 +66,21 @@
                     <div class="input-field col s6">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="icon_prefix" type="text" class="validate" name="firstname">
-                        <label for="icon_prefix">First Name</label>
+                        <label for="icon_prefix">Vorname</label>
                     </div>
                     <div class="input-field col s6">
                         <input id="icon_prefix" type="text" class="validate" name="lastname">
-                        <label for="icon_prefix">Last Name</label>
+                        <label for="icon_prefix">Nachname</label>
                     </div>
                     <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>
                         <input id="email" type="email" class="validate"  name="email">
-                        <label for="email">Email</label>
+                        <label for="email">E-Mail</label>
                     </div>
                     <div class="input-field col s12">
                         <i class="material-icons prefix">phone</i>
                         <input id="icon_telephone" type="tel" class="validate"  name="telephone">
-                        <label for="icon_telephone">Telephone</label>
+                        <label for="icon_telephone">Telefon</label>
                     </div>
 
                 </div>
@@ -86,7 +90,7 @@
                     <div class="input-field col s12">
                         <i class="material-icons prefix">message</i>
                         <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
-                        <label for="textarea1">您的留言</label>
+                        <label for="textarea1">Ihre Nachricht</label>
                     </div>
                 </div>
 

@@ -6,8 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
-@import url('https://fonts.googleapis.com/css?family=Dosis:200,300|Libre+Baskerville:400i|Proza+Libre|Cormorant+Garamond');
-
+/*@import url('https://fonts.googleapis.com/css?family=Dosis:200,300|Libre+Baskerville:400i|Proza+Libre|Cormorant+Garamond');*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i,400');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre');
 
 html {
   font-family: "Roboto", "Microsoft YaHei";
@@ -153,6 +154,7 @@ footer.page-footer {
 
 h4, h5{
   font-family: 'Libre Baskerville', serif;
+  font-style: italic;
 }
 /* fluid 5 columns */
 .grid-sizer,

@@ -11,9 +11,9 @@
         <div class="section no-pad-bot">
 
             <div class="row center">
-                <h1 class="header col s12"><span class=" bg-pad">Hauptmenu</span></h1>
-                <p class="header col s12 m6 offset-m3 light bg-pad">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>
-                <h6 class="header col s12 "><a href="#!" class="btn-large waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>
+                {{--<h1 class="header col s12"><span class=" bg-pad">Hauptmenu</span></h1>--}}
+                {{--<p class="header col s12 m6 offset-m3 light bg-pad">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>--}}
+                {{--<h6 class="header col s12 "><a href="#!" class="btn-large waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>--}}
 
             </div>
 
@@ -63,7 +63,7 @@
                 <div class="col s12 center">
                     <h4><i class="mdi-content-send red-text text-darken-4">Über uns</i></h4>
                     <p class="left-align light  ">
-                        Herzlich willkommen im Restaurant Jingjing Asia
+                        Herzlich willkommen im Restaurant Jingjing Asia.
                         Unser Restaurant bietet Ihnen erstklassige chinesisch Spezialität nach "Chuan" Art und frische japanische Sushi Spezialität .
                         Unser Restaurant besteht aus zwei innere Gasträumen mit ca. 350 Plätzen und Terrassenräume mit ca. 150 Plätzen.
                         Außerdem haben wir 3 Separat VIP Räume, die sehr gut für Private Feiern unter Freunden ,der Familie oder Kollegen geeignet sind. Für hochwertige Firmenevent, Veranstaltung organisieren Wir in schöne The Squaire Gartenbereich .
@@ -267,17 +267,12 @@
 
                     {{--reservation-box--}}
                     <div class="valign-wrapper row reservation-box">
-                        <div class="col card-panel teal s10 pull-s1 m6 pull-m3 l4 pull-l4 hide">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
-                        </div>
 
 
                         <!-- Modal Structure -->
                         <div id="modal1" class="modal">
                             <div class="modal-content">
-                                <h4>Vielen Dank für Ihre Reservierung</h4>
+                                <h5>Vielen Dank für Ihre Reservierung</h5>
                                 <p>
                                  Wir werden Ihre Anfrage schnellstmöglich zu bearbeiten.
                                 Bitte beachten Sie, dass Ihre Reservierung erst dann Gültigkeit hat, wenn Sie von uns eine schriftliche Bestätigung erhalten haben.
