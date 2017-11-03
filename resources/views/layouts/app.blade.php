@@ -11,6 +11,9 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{{asset('noUiSlider')}}/nouislider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{{asset('f')}}/flickity.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
 </head>
 <body class="@yield('body_class')">
 
@@ -41,6 +44,10 @@
 <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 
 <script src="{{asset('noUiSlider')}}/nouislider.min.js"></script>
+
+<script src="{{asset('f/flickity.pkgd.min.js')}}"></script>
+>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 <script src="js/init.js"></script>
 <script>

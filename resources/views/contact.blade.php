@@ -101,7 +101,7 @@
 
 
                 <div class="row center">
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <button class="btn waves-effect waves-light green" type="submit" name="action">Submit
                         <i class="material-icons right">cloud</i>
                     </button>
                 </div>

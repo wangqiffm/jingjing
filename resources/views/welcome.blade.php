@@ -7,19 +7,41 @@
 @endsection
 
 @section('content')
-    <div id="index-banner" class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
+    <div id="index-banner" class="parallax-container valign-wrapper slider">
+        {{--<div class="section no-pad-bot">--}}
 
-            <div class="row center">
+            {{--<div class="row center">--}}
                 {{--<h1 class="header col s12"><span class=" bg-pad">Hauptmenu</span></h1>--}}
                 {{--<p class="header col s12 m6 offset-m3 light bg-pad">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>--}}
                 {{--<h6 class="header col s12 "><a href="#!" class="btn-large waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>--}}
 
-            </div>
+            {{--</div>--}}
 
-        </div>
-        <div class="parallax"><img src="img/slide1.png" alt="Unsplashed background img 1"></div>
+        {{--</div>--}}
+
+        <div class="parallax"><img src="{{asset('img/slide6.jpg')}}" alt=""></div>
+        <div class="parallax"><img src="{{asset('img/slide4.jpg')}}" alt=""></div>
+        <div class="parallax"><img src="{{asset('img/slide5.jpg')}}" alt=""></div>
+        <div class="parallax"><img src="{{asset('img/slide1.jpg')}}" alt=""></div>
+
+        <div class="parallax"><img src="{{asset('img/slide3.jpg')}}" alt=""></div>
     </div>
+
+
+    {{--<div class="carousel">--}}
+        {{--<div class="carousel-cell">--}}
+            {{--<img src="{{asset('img/slide1.png')}}" alt="orange tree" />--}}
+        {{--</div>--}}
+        {{--<div class="carousel-cell">--}}
+            {{--<img src="{{asset('img/slide2.png')}}" alt="One World Trade" />--}}
+        {{--</div>--}}
+        {{--<div class="carousel-cell">--}}
+            {{--<img src="{{asset('img/slide3.jpg')}}" alt="drizzle" />--}}
+        {{--</div>--}}
+        {{--<div class="carousel-cell">--}}
+            {{--<img src="{{asset('img/slide4.jpg')}}" alt="cat nose" />--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
     {{--<div class="slider parallax-container valign-wrapper">--}}
         {{--<ul class="slides">--}}

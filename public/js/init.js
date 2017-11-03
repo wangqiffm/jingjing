@@ -11,7 +11,13 @@
     	constrainWidth:false
     });
 
-	$('.slider').slider();
+
+        // $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+
+            // $('.slider').bxSlider();
+
+	// $('.slider').slider();
 
       var $button = $(
           '  <div  id="source-button" class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; right: 5px; top:5px;">' +
