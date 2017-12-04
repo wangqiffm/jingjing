@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers>
+    <marker name="Jingjing Express" lat="50.0528847" lng="8.5698686" category="Restaurant"
+            address="Frankfurt Flughafen Fernbahnhof" address2="Ebene 3 West" city="Frankfurt am Main"
+            postal="60549" country="DE" phone="+49(0)69/643 552 272" email="info@jingjing-asia.de" web="http://jingjing-asia.de"
+            hours1="Mo. - So. 10:30 - 22:00" hours2="" hours3="" featured="" features=""/>
+    <marker name="Jingjing Express" lat="48.808472" lng="8.180000" category="Restaurant"
+            address="Serways Autobahn-Rasthaus Baden-Baden West" address2="Am Rasthof 4" city="Baden-Baden"
+            postal="76532" country="DE" phone="" email="jingjing-asia@live.com" web="http://jingjing-asia.de"
+            hours1="Mo. - So. 10:30 - 22:00" hours2="" hours3="" featured="" features=""/>
+    <marker name="Jingjing Express" lat="49.8948279" lng="9.3946624" category="Restaurant"
+            address="Rasthaus &amp; Hotel im Spessart A3 Süd Gmbh" address2="BAB Südseite 3" city="Weibersbrunn"
+            postal="63879" country="DE" phone="" email="info@jingjing-asia.de" web="http://jingjing-asia.de"
+            hours1="Mo. - So. 10:30 - 22:00" hours2="" hours3="" featured="" features=""/>
+
+</markers>

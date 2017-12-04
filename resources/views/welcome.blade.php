@@ -412,18 +412,17 @@
 
 
 
-    <div class="container">
-        <div class="section">
 
-            <div class="row">
+        <div class="bh-sl-container">
 
-
-
+            <div id="bh-sl-map-container" class="bh-sl-map-container">
+                <div id="bh-sl-map" class="bh-sl-map"></div>
+                <div class="bh-sl-loc-list">
+                    <ul class="list"></ul>
+                </div>
             </div>
-
-
         </div>
-    </div>
+        <div class="clearfix"></div>
 
 
 
@@ -432,6 +431,8 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
+
+
                     <h3 class="header col s12 light">Hauptmenu</h3>
                     <p class="header col s12 m6 offset-m3 light">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>
                     <h6 class="header col s12 light"><a href="#!" class="btn waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>
@@ -441,5 +442,37 @@
         </div>
         <div class="parallax"><img src="img/slide2.png" alt="Unsplashed background img 3"></div>
     </div>
+
+@endsection
+
+@section('bottom_scripts')
+
+    <script src="{{asset('store-locator/dist/')}}/assets/js/libs/handlebars.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script>
+    <script src="{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/jquery.storelocator.js"></script>
+    <script>
+        $(function() {
+            $('#bh-sl-map-container').storeLocator({
+                'slideMap' : false,
+                'defaultLoc': true,
+                'defaultLat': '49.55204864',
+                'defaultLng' : '8.77608032',
+                'distanceAlert':500,
+                'mapSettings'                : {
+                    mapTypeId      : google.maps.MapTypeId.ROADMAP,
+                    zoom           : 8
+                },
+//                'visibleMarkersList' : true,
+                'infowindowTemplatePath'     : '{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/templates/infowindow-description.html',
+                'listTemplatePath'           : '{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/templates/location-list-description.html',
+                'dataType'                   : 'xml',
+                'dataLocation'               : '{{asset('store-locator/dist/')}}/data/locations.xml'
+            });
+        });
+    </script>
+@endsection
+
+@section('after_styles')
+    <link rel="stylesheet" type="text/css" href="{{asset('store-locator/dist/')}}/assets/css/storelocator.css" />
 
 @endsection
