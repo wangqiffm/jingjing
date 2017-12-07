@@ -7,7 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class ReservationSent extends Mailable
+class ContactSent extends Mailable
 {
 
     use Queueable, SerializesModels;
@@ -15,17 +15,17 @@ class ReservationSent extends Mailable
     /**
      * @var
      */
-    private $reservation;
+    private $contact;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($reservation)
+    public function __construct($contact)
     {
         //
-        $this->reservation = $reservation;
+        $this->contact = $contact;
     }
 
     /**
@@ -35,9 +35,9 @@ class ReservationSent extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.reservation.sent')
-            ->text('emails.reservation.sent_plain')
-            ->subject('Reservierung von www.jinjing-asia.de '.date('Y-m-d H:i:s'))
-            ->with($this->reservation);
+        return $this->view('emails.contact.sent')
+            ->text('emails.contact.sent_plain')
+            ->subject('Nachricht von www.jinjing-asia.de '.date('Y-m-d H:i:s'))
+            ->with($this->contact);
     }
 }

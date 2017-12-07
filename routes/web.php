@@ -14,13 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/contact', function () {
-  return view('contact');
-});
+//Route::get('/contact', function () {
+//  return view('contact');
+//});
 Route::get('/imprint', function () {
     return view('imprint');
 });
-
+Route::get('/menu-page', function () {
+  return view('menu');
+});
 
 Route::any('captcha-test', function()
 {

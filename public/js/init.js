@@ -11,7 +11,8 @@
     	constrainWidth:false
     });
 
-
+        $(".responsive-img").unveil();
+        $('.materialboxed').materialbox();
         // $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 
@@ -19,35 +20,46 @@
 
 	// $('.slider').slider();
 
-      var $button = $(
-          '  <div  id="source-button" class="fixed-action-btn horizontal" style="position: absolute; display: inline-block; right: 5px; top:5px;">' +
-          '          <a class="btn-floating btn-large red">' +
-          '          <i class="large material-icons">mode_edit</i>' +
-          '          </a>' +
-          '          <ul>' +
-          '          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>' +
-          '          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>' +
-          '          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>' +
-          '          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>' +
-          '          </ul>' +
-          '</div>' ).click(function(){
-          var html = $(this).parent().html();
-          // html = cleanSource(html);
-          $("#source-modal pre").text(html);
-          $("#source-modal").modal();
-      });
 
-      $(".bs-component").hover(function(){
-          $(this).append($button);
-          $button.show();
-      }, function(){
-          $button.hide();
-      });
 
         $('.scrollspy').scrollSpy({
             scrollOffset:60
         });
+        $('.menu-section').scrollSpy({
+            scrollOffset:60
+        });
+        // Floating-Fixed table of contents
+        setTimeout(function() {
+            var tocWrapperHeight = 260; // Max height of ads.
+            var tocHeight = $('.toc-wrapper .table-of-contents').length ? $('.toc-wrapper .table-of-contents').height() : 0;
+            var socialHeight = 95; // Height of unloaded social media in footer.
+            var footerOffset = $('body > footer').first().length ? $('body > footer').first().offset().top : 0;
+            var bottomOffset = footerOffset - socialHeight - tocHeight - tocWrapperHeight;
 
+            var pushpinObj = {
+
+            };
+
+
+                pushpinObj.top = 0;
+
+            if ($('nav').length) {
+                pushpinObj.top += $('nav').height();
+
+            }
+            if ($('#index-banner').length) {
+                pushpinObj.top += $('#index-banner').height();
+            }
+            if ($('#page-banner').length) {
+                pushpinObj.top += $('#page-banner').height();
+
+            }
+            if ($('.fixed-announcement').length) {
+                pushpinObj.top += 48;
+            }
+            console.log(pushpinObj);
+            $('.toc-wrapper').pushpin(pushpinObj);
+        }, 100);
 
         $('select').material_select();
 

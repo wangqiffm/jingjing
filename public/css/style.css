@@ -18,6 +18,10 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
+nav ul a:hover {
+  background-color: rgba(183, 28, 28,0.1);
+  /*color: #fff;*/
+}
 
 
 
@@ -128,7 +132,7 @@ footer.page-footer {
   padding: 10px;
   /*background-size: 100% 100%;*/
   background-size: cover;
-  height: 600px;
+  height: 670px;
 }
 
 #reservation  .reservation-box {
@@ -140,6 +144,19 @@ footer.page-footer {
 
 }
 
+
+#contact  .contact-box {
+  padding-top: 30px;
+  height: 100%;
+  position: relative;
+}
+#contact div.input-field{
+  color: #000;
+  line-height: 22.5px;
+}
+#contact h3{
+  color: #000;
+}
 .bg-pad {
   padding: 0.5rem 2rem;
   color: #000;
@@ -156,13 +173,29 @@ h4, h5{
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
-/* fluid 5 columns */
-.grid-sizer,
-.grid-item { width: 100%; }
-/* 2 columns wide */
-.grid-item{
+
+
+.scroll-top-button {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+  transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+
+  font-size: 24px;
+  font-weight: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+
+  line-height: 50px;
+  background-color: #06060f;
+  color: #99a9b5;
 }
-.grid-item--width2 { width: 100%; }
 
 @media only screen and (min-width : 992px) {
 
@@ -170,14 +203,9 @@ h4, h5{
     position: relative;
     padding-top: 40px;
   }
-  /* fluid 5 columns */
-  .grid-sizer,
-  .grid-item { width: 50%; }
-  /* 2 columns wide */
-  .grid-item{
-  }
-  .grid-item--width2 { width: 50%; }
-}
+
+
+
 
 #index-banner .parallax {
   -webkit-animation-name: cf4FadeInOut;

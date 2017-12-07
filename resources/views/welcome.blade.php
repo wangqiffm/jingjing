@@ -284,102 +284,9 @@
         </div>
 
         <div class="section scrollspy" id="reservation">
-            <div class="row">
-                <div class="col s12 valign-bg ">
 
-                    {{--reservation-box--}}
-                    <div class="valign-wrapper row reservation-box">
+                @include('reservation-inc')
 
-
-                        <!-- Modal Structure -->
-                        <div id="modal1" class="modal">
-                            <div class="modal-content">
-                                <h5>Vielen Dank für Ihre Reservierung</h5>
-                                <p>
-                                 Wir werden Ihre Anfrage schnellstmöglich zu bearbeiten.
-                                Bitte beachten Sie, dass Ihre Reservierung erst dann Gültigkeit hat, wenn Sie von uns eine schriftliche Bestätigung erhalten haben.
-
-                                Wir freuen uns darauf, Sie schon bald als Gast in unserem Hause zu begrüßen.
-
-                                Ihr Team vom Jingjing Asia Restaurant</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Schließen</a>
-                            </div>
-                        </div>
-
-
-                        <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
-                            <form class="" id="reservation-form" action="{{ route("reservation.send") }}" method="post">
-                                {{ csrf_field() }}
-                                <div class="card-content">
-
-
-                                    <span class="card-title"><h5 class="red-text text-darken-4">Reservierung</h5></span>
-
-                                    <div class="row">
-
-                                        <div class="input-field col s12">
-                                            <select name="reservation[people]">
-                                                <option value="1" selected>1 Person</option>
-                                                @for ($i = 2; $i <= 20; $i++)
-                                                    <option value="{{ $i }}">{{ $i }} Personen</option>
-                                                @endfor
-                                            </select>
-
-                                            <label for="reservation[people]">Wie viele Personen ?<label>
-                                        </div>
-
-                                        <div class="input-field col s12">
-                                            <input placeholder="Placeholder" type="text" name="reservation[date]" class="datepicker">
-                                            <label for="reservation[date]">An welchem Tag ?</label>
-                                        </div>
-
-                                        <div class="input-field col s12">
-                                          <?php
-
-                                          $options = [];
-
-                                          $dt = Carbon\Carbon::create(2012, 1, 31, 11,30,0);
-                                          $end = Carbon\Carbon::create(2012, 1, 31, 22,0,0);
-                                          while($dt->lessThan($end)){
-                                            $options[$dt->format('H:i')] = $dt->format('H:i');
-                                            $dt->addMinutes(15);
-                                          }
-                                          ?>
-                                            <select name="reservation[time]">
-                                                @foreach($options as $key => $option)
-                                                    <option value="{{ $key }}">{{ $option }}</option>
-                                                @endforeach
-                                            </select>
-                                            <label for="reservation[time]">Uhrzeit</label>
-                                        </div>
-
-                                        <div class="input-field col s6">
-                                            <input placeholder="Name" type="text" name="reservation[name]" class="">
-                                            <label for="reservation[name]">Ihr Name</label>
-                                        </div>
-
-                                        <div class="input-field col s6">
-                                            <input placeholder="Telefon" type="text" name="reservation[phone]" class="">
-                                            <label for="reservation[phone]">Telefon</label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="card-action right-align">
-                                    <input type="reset" id="reset" class="btn-flat grey-text waves-effect no-padding">
-                                    <button id="send" class="btn green waves-effect waves-light " type="submit" name="action">Senden
-                                        <i class="material-icons right">send</i>
-                                    </button>
-                                    {{--<input id="send" type="submit" class="btn green waves-effect waves-light no-padding" value="Senden">--}}
-                                </div>
-                            </form>
-                        </div>
-                    </div> {{--END reservation-box--}}
-
-                </div>
-            </div>
         </div>
 
         <div class="section">
@@ -409,37 +316,28 @@
         </div>
     </div>
 
+    <div class="parallax-container valign-wrapper">
 
-
-
-    <div class="container">
-        <div class="section">
-
-            <div class="row">
-
-
+        <div class="section no-pad-bot ">
+        <div class="container">
+            <div class="row center">
+                <h3 class="header col s12 light">Hauptmenu</h3>
+                <p class="header col s12 m6 offset-m3 light">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>
+                <h6 class="header col s12 light"><a href="#!" class="btn waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>
 
             </div>
-
 
         </div>
-    </div>
-
-
-
-
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-                <div class="row center">
-                    <h3 class="header col s12 light">Hauptmenu</h3>
-                    <p class="header col s12 m6 offset-m3 light">Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.</p>
-                    <h6 class="header col s12 light"><a href="#!" class="btn waves-effect waves-light orange lighten-1">Weiterlesen</a></h6>
-
-                </div>
-            </div>
         </div>
         <div class="parallax"><img src="img/slide2.png" alt="Unsplashed background img 3"></div>
     </div>
+
+    <div class="section  scrollspy" id="contact">
+        <div class="container">
+            @include('contact-inc')
+
+        </div>
+    </div>
+
 
 @endsection

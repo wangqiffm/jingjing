@@ -5,10 +5,10 @@
 </ul>
 <ul id="nav-mobile" class="side-nav">
     <li><a href="{{ url('/') }}">Home</a></li>
-    <li><a href="#!">Speisekarte</a></li>
+    <li><a href="{{ url('/menu-page') }}">Speisekarte</a></li>
     <li><a href="{{ url('/') }}/#reservation">Reservierung</a></li>
     <li><a href="{{ url('/') }}/#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
-    <li><a href="{{ url('contact') }}">Kontakt</a></li>
+    <li><a href="{{ url('/contact') }}">Kontakt</a></li>
 
 </ul>
 
@@ -36,10 +36,10 @@
             {{--<a id="logo-container" href="#" class="brand-logo">Logo</a>--}}
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url('/') }}">Home</a></li>
-                <li><a href="#!">Speisekarte</a></li>
+                <li><a href="{{ url('/menu-page') }}">Speisekarte</a></li>
                 <li><a href="#reservation">Reservierung</a></li>
                 <li><a href="#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
-                <li><a href="{{ url('contact') }}">Kontakt</a></li>
+                <li><a href="#contact">Kontakt</a></li>
                 {{--<li>--}}
                     {{--@if (Auth::check())--}}
                         {{--<a href="{{ url(config('backpack.base.route_prefix', 'admin') .'/dashboard') }}">{{ Auth::user()->name }}</a></li>--}}

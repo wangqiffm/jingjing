@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    <div id="index-banner" class="parallax-container valign-wrapper">
+    <div id="page-banner" class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
 
             <h1 class="header center white-text text-lighten-2">Wr würden uns freuen, von ihnen zu hören! </h1>

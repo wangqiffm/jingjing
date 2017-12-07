@@ -17,9 +17,7 @@
 </head>
 <body class="@yield('body_class')">
 
-@component('nav')
 
-@endcomponent
 
 @section('sidebar')
 
