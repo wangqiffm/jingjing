@@ -291,6 +291,39 @@
 
         <div class="section">
             <div class="row">
+                <div class="col s12 ">
+                    <h4 class="center">
+                        <i class="red-text text-darken-4">
+                            Wenn es mal schnell gehen muss.</i>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="row">
+
+                <div class="bh-sl-container">
+                    <div id="bh-sl-map-container" class="bh-sl-map-container">
+
+
+
+                        <div id="bh-sl-map" class="bh-sl-map"></div>
+
+
+                        <div class="card hoverable bh-sl-loc-list">
+                            <ul class="list"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+
+        <div class="section">
+            <div class="row">
                 <div class="col s12 center">
                     <h4><i class="mdi-content-send red-text text-darken-4">
                             Das sagen unsere Gäste...</i></h4>

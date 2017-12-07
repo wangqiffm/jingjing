@@ -19,10 +19,9 @@ nav .brand-logo {
   color: #444;
 }
 nav ul a:hover {
-  background-color: rgba(183, 28, 28,0.1);
-  /*color: #fff;*/
+    background-color: rgba(183, 28, 28,0.1);
+    /*color: #fff;*/
 }
-
 
 
 .caption{
@@ -89,7 +88,53 @@ footer.page-footer {
 }
 
 
+/*map*/
+.bh-sl-container{
+    padding : 0;
+}
+.bh-sl-container .bh-sl-map {
+    /*height: 680px;*/
+}
+.bh-sl-container .bh-sl-loc-list{
+    /*height: 680px;*/
+}
+.bh-sl-container .bh-sl-map-container {
+    margin-top: 0px;
+    font-family: 'Proza Libre', "Microsoft YaHei", serif;
+}
+.bh-sl-container .bh-sl-loc-list .list-label{
+    background-color: #B71C1C;
+}
+.gm-style div{
+    font-family: 'Proza Libre', "Microsoft YaHei", serif;
+}
+.bh-sl-container .bh-sl-loc-list{
+
+    height:inherit;
+}
+@media (min-width: 1024px){
+
+    .bh-sl-container .bh-sl-map {
+        width:100%;
+    }
+    .bh-sl-container  {
+        position: relative;
+    }
+    .bh-sl-container .bh-sl-map-container {
+
+    }
+    .bh-sl-container .bh-sl-loc-list {
+        position: absolute;
+        left: 5%;
+        top:10%;
+        width: 24%;
+
+        background: none;
+    }
+}
 /*////*/
+
+
 
 #loader{
 }
@@ -128,11 +173,11 @@ footer.page-footer {
 }
 
 #reservation .valign-bg{
-  background: url('../img/front-img-4.jpg') no-repeat;
-  padding: 10px;
-  /*background-size: 100% 100%;*/
-  background-size: cover;
-  height: 670px;
+    background: url('../img/tisch.jpg') no-repeat;
+    padding: 10px;
+    /*background-size: 100% 100%;*/
+    background-size: cover;
+    height: 600px;
 }
 
 #reservation  .reservation-box {
@@ -141,21 +186,20 @@ footer.page-footer {
 }
 
 #reservation .card{
-
+    /*opacity: 0.85;*/
+    background-color: rgba(255,255,255,0.9);
 }
-
-
 #contact  .contact-box {
-  padding-top: 30px;
-  height: 100%;
-  position: relative;
+    padding-top: 30px;
+    height: 100%;
+    position: relative;
 }
 #contact div.input-field{
-  color: #000;
-  line-height: 22.5px;
+    color: #000;
+    line-height: 22.5px;
 }
 #contact h3{
-  color: #000;
+    color: #000;
 }
 .bg-pad {
   padding: 0.5rem 2rem;
@@ -163,7 +207,9 @@ footer.page-footer {
   background: rgba(255, 255, 255,0.5);
 
 }
-
+.no-margin {
+    margin: 0; !important;
+}
 .no-margin-bottom {
   margin-bottom: 0; !important;
 }
@@ -173,30 +219,27 @@ h4, h5{
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
-
-
 .scroll-top-button {
-  position: fixed;
-  right: 50px;
-  bottom: 50px;
-  z-index: 1000;
-  transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1000;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
 
-  font-size: 24px;
-  font-weight: normal;
-  display: inline-block;
-  vertical-align: top;
-  width: 50px;
-  height: 50px;
-  text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    text-align: center;
 
-  line-height: 50px;
-  background-color: #06060f;
-  color: #99a9b5;
+    line-height: 50px;
+    background-color: #06060f;
+    color: #99a9b5;
 }
-
 @media only screen and (min-width : 992px) {
 
   .header{
@@ -204,9 +247,10 @@ h4, h5{
     padding-top: 40px;
   }
 
-
-
-
+}
+nav ul a:hover {
+    color: #B71C1C;
+}
 #index-banner .parallax {
   -webkit-animation-name: cf4FadeInOut;
   -webkit-animation-timing-function: ease-in-out;
@@ -259,11 +303,4 @@ h4, h5{
     opacity:1;
   }
 }
-.carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
+

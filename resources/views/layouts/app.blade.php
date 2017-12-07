@@ -9,11 +9,13 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    @yield('after_styles')
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{{asset('noUiSlider')}}/nouislider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="{{asset('f')}}/flickity.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
 </head>
 <body class="@yield('body_class')">
 
@@ -120,5 +122,6 @@
     });
 </script>
 
+@yield('bottom_scripts')
 </body>
 </html>
