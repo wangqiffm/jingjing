@@ -98,9 +98,38 @@ footer.page-footer {
 }
 .bh-sl-container .bh-sl-map-container {
    margin-top: 0px;
+  font-family: 'Proza Libre', "Microsoft YaHei", serif;
 }
+.bh-sl-container .bh-sl-loc-list .list-label{
+  background-color: #B71C1C;
+}
+.gm-style div{
+  font-family: 'Proza Libre', "Microsoft YaHei", serif;
+}
+.bh-sl-container .bh-sl-loc-list{
 
+  height:inherit;
+}
+@media (min-width: 1024px){
 
+.bh-sl-container .bh-sl-map {
+  width:100%;
+}
+  .bh-sl-container  {
+    position: relative;
+  }
+  .bh-sl-container .bh-sl-map-container {
+
+  }
+  .bh-sl-container .bh-sl-loc-list {
+    position: absolute;
+    left: 5%;
+    top:10%;
+    width: 24%;
+
+    background: none;
+  }
+}
 /*////*/
 
 
@@ -141,7 +170,7 @@ footer.page-footer {
 }
 
 #reservation .valign-bg{
-  background: url('../img/front-img-4.jpg') no-repeat;
+  background: url('../img/tisch.jpg') no-repeat;
   padding: 10px;
   /*background-size: 100% 100%;*/
   background-size: cover;
@@ -154,7 +183,8 @@ footer.page-footer {
 }
 
 #reservation .card{
-
+  /*opacity: 0.85;*/
+  background-color: rgba(255,255,255,0.9);
 }
 
 .bg-pad {
@@ -163,7 +193,9 @@ footer.page-footer {
   background: rgba(255, 255, 255,0.5);
 
 }
-
+.no-margin {
+  margin: 0; !important;
+}
 .no-margin-bottom {
   margin-bottom: 0; !important;
 }
