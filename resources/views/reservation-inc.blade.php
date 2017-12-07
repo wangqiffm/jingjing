@@ -23,7 +23,7 @@
             </div>
 
 
-            <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+            <div class="col card hoverable s10 pull-s1 l6 pull-l3 xl4 pull-xl1">
                 <form class="" id="reservation-form" action="{{ route("reservation.send") }}" method="post">
                     {{ csrf_field() }}
                     <div class="card-content">
