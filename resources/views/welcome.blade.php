@@ -374,3 +374,41 @@
 
 
 @endsection
+
+
+
+@section('bottom_scripts')
+
+    <script src="{{asset('store-locator/dist/')}}/assets/js/libs/handlebars.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script>
+    <script src="{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/jquery.storelocator.js"></script>
+    <script>
+        $(function () {
+            $('#bh-sl-map-container').storeLocator({
+                'slideMap': false,
+                'defaultLoc': true,
+                'defaultLat': '49.55204864',
+                'defaultLng': '8.77608032',
+                'distanceAlert': 500,
+                'listColor1'                 : 'rgba(255,255,255,0.9)',
+                'listColor2'                 : 'rgba(255,255,255,0.9)',
+                'mapSettings': {
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    zoom: 8
+                },
+//                'visibleMarkersList' : true,
+                {{--'markerImg':'{{asset('img/')}}/marker.jpg',--}}
+                //                'markerDim':{width:64,height:64},
+                'infowindowTemplatePath': '{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/templates/infowindow-description.html',
+                'listTemplatePath': '{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/templates/location-list-description.html',
+                'dataType': 'xml',
+                'dataLocation': '{{asset('store-locator/dist/')}}/data/locations.xml'
+            });
+        });
+    </script>
+@endsection
+
+@section('after_styles')
+    <link rel="stylesheet" type="text/css" href="{{asset('store-locator/dist/')}}/assets/css/storelocator.css"/>
+
+@endsection
