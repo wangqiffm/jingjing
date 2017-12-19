@@ -88,7 +88,7 @@
                     </div>
                     <div class="card-action right-align">
                         <input type="reset" class="btn-flat grey-text waves-effect no-padding">
-                        <button  class="btn green waves-effect waves-light " type="submit" name="action">Senden
+                        <button  class="btn red waves-effect waves-light " type="submit" name="action">Senden
                             <i class="material-icons right">send</i>
                         </button>
                     </div>

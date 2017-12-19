@@ -23,12 +23,12 @@
                 <h5 class="white-text">Links</h5>
                 <ul>
                     <li><a class="white-text" href="{{ url('/') }}">Home</a></li>
-                    <li><a class="white-text" href="#!">Speisekarte</a></li>
+                    <li><a class="white-text" href="#jingjing_express">Jingjing Express</a></li>
+                    <li><a class="white-text" href="{{ url('/menu-page') }}">Speisekarte</a></li>
                     <li><a class="white-text" href="#reservation">Reservierung</a></li>
-                    <li><a class="white-text" href="#aboutus" {{--class="dropdown-button" data-activates="dropdown2"--}}>Über uns</a></li>
-                    <li><a class="white-text" href="{{ url('contact') }}">Kontakt</a></li>
+                    <li><a class="white-text" href="#aboutus">Über uns</a></li>
+                    <li><a class="white-text" href="#contact">Kontakt</a></li>
                     <li><a class="white-text" href="{{ url('imprint') }}">Impressum</a></li>
-
                 </ul>
             </div>
 

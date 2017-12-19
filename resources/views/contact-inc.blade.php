@@ -27,7 +27,7 @@
             <div class="card-content">
 
 
-            <span class="card-title"><h4 class="red-text text-darken-4 center">Kontaktieren Sie uns</h4></span>
+            <span class="card-title"></span>
 
             <div class="row">
                 @if (session('status'))
@@ -118,7 +118,7 @@
 
             <div class="card-action right-align">
                 <input type="reset"  class="btn-flat grey-text waves-effect no-padding">
-                <button  class="btn green waves-effect waves-light " type="submit" name="action">Senden
+                <button  class="btn red waves-effect waves-light " type="submit" name="action">Senden
                     <i class="material-icons right">send</i>
                 </button>
             </div>

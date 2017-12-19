@@ -1,18 +1,22 @@
-<div class="section menu-section" id="{{str_replace(' ',"_", $title)}}">
+<div class="section menu-section" id="{{$key}}">
 
         <h4 class="header">{{$title}}</h4>
 <div class="row">
-    @for($i = $from ; $i<=$to ; $i++)
+    @foreach(array_wrap($from) as $i)
 
-    <div class="col s12 m4">
+
+    <div class="col s12 l4">
         <div class="card">
             <div class="card-image">
-                <img class="responsive-img materialboxed" src="{{asset('menu/'.$i.'_compressed.jpg')}}"
-                     data-src="{{asset('menu/'.$i.'_compressed.jpg')}}"/>
+                <img class="responsive-img materialboxed" src="{{asset('menu/'.$i.'.jpg')}}"
+                     data-src="{{asset('menu/'.$i.'.jpg')}}"/>
 
             </div>
         </div>
     </div>
-    @endfor
+        @if ($loop->iteration % 3 ==0)
+            <div class="clearfix"></div>
+        @endif
+    @endforeach
 </div>
 </div>

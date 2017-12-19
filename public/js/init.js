@@ -13,13 +13,6 @@
 
         $(".responsive-img").unveil();
         $('.materialboxed').materialbox();
-        // $('.carousel.carousel-slider').carousel({fullWidth: true});
-
-
-            // $('.slider').bxSlider();
-
-	// $('.slider').slider();
-
 
 
         $('.scrollspy').scrollSpy({
@@ -57,7 +50,7 @@
             if ($('.fixed-announcement').length) {
                 pushpinObj.top += 48;
             }
-            console.log(pushpinObj);
+
             $('.toc-wrapper').pushpin(pushpinObj);
         }, 100);
 
@@ -106,57 +99,6 @@
             }
         });
 
-
-
-
-
-
-//         picker.open()
-//         picker.close()
-//
-// // If a “click” is involved, prevent the event bubbling.
-//         event.stopPropagation()
-//
-// // If we want to maintain focus on the input,
-// // prevent the default action on “mousedown”.
-//         event.preventDefault()
-
-
-        // var slider = document.getElementById('time-picker');
-        //
-        // noUiSlider.create(slider, {
-        //     start: [ 20, 80 ],
-        //     connect: true,
-        //     step: 10,
-        //     range: {
-        //         'min': 0,
-        //         'max': 100
-        //     }
-        // });
-        //
-        //
-        // noUiSlider.create(slider, {
-        //     start: [20, 80],
-        //     connect: true,
-        //     step: 1,
-        //     orientation: 'horizontal', // 'horizontal' or 'vertical'
-        //     range: {
-        //         'min': 0,
-        //         'max': 100
-        //     },
-        //     format: wNumb({
-        //         decimals: 0
-        //     })
-        // });
-//
-//       $('.grid').packery({
-//           // options
-//           // use outer width of grid-sizer for columnWidth
-//           columnWidth: '.grid-sizer',
-// // do not use .grid-sizer in layout
-//           itemSelector: '.grid-item',
-//           percentPosition: true
-//       });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

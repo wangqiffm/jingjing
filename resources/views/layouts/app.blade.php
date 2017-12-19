@@ -11,10 +11,7 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     @yield('after_styles')
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="{{asset('noUiSlider')}}/nouislider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="{{asset('f')}}/flickity.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
 </head>
 <body class="@yield('body_class')">
@@ -42,15 +39,9 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 {{--<script src="js/app.js"></script>--}}
 <script src="js/materialize.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 
-<script src="{{asset('noUiSlider')}}/nouislider.min.js"></script>
-
-<script src="{{asset('f/flickity.pkgd.min.js')}}"></script>
 <script src="{{asset('unveil/jquery.unveil.js')}}"></script>
 
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
 <script src="js/init.js"></script>
 <script>
@@ -82,13 +73,6 @@
                     success: function(data){
                         $(modal_query).modal('open');
                         sb.toggleClass('disabled');
-
-//                    $.when($('#reservation-form').fadeOut(500))
-//                        .done(function() {
-//                            $('#send').toggleClass('disabled');
-////                            $('#loader').toggleClass('hide',500);
-////                            $('#reservation .hide').toggleClass('hide',500);
-//                        });
 
                     },
                     error: function(data){

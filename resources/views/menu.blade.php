@@ -11,83 +11,69 @@
 <?php
 $sections = [
   [
+    'title' => 'Mittagskarte',
+    'from'  => "mittagskarte",
+  ],
+  [
+    'title' => 'Sushi',
+    'from'  => ["sushi1","sushi2"],
+  ],
+  [
     'title' => 'Suppen',
     'from'  => 1,
-    'to'    => 2,
   ],
   [
     'title' => 'Salat',
-    'from'  => 3,
-    'to'    => 3,
+    'from'  => 2,
   ],
   [
     'title' => 'Vorspeisen',
-    'from'  => 4,
-    'to'    => 5,
+    'from'  => [3,4],
   ],
   [
     'title' => 'Kalte Speise',
-    'from'  => 6,
-    'to'    => 10,
+    'from'  => [5,6,7],
   ],
   [
     'title' => 'Nudelsuppe',
-    'from'  => 11,
-    'to'    => 12,
+    'from'  => 8,
   ],
   [
     'title' => 'Gebratene Reis und Nudel',
-    'from'  => 13,
-    'to'    => 15,
+    'from'  => [9,10,11],
+  ],
+  [
+    'title' => 'Fleisch',
+    'from'  => [12,13,14,15,16,17,18],
   ],
   [
     'title' => 'Meerfrüchte',
-    'from'  => 23,
-    'to'    => 28,
+    'from'  => [19,20,21,22,23],
   ],
   [
     'title' => 'Topf',
-    'from'  => 29,
-    'to'    => 30,
+    'from'  => [24,25],
   ],
   [
     'title' => 'Vegetarisch',
-    'from'  => 31,
-    'to'    => 33,
+    'from'  => [26,27],
   ],
   [
     'title' => 'Beilage',
-    'from'  => 34,
-    'to'    => 34,
-  ],
-  [
-    'title' => 'Nachtisch',
-    'from'  => 35,
-    'to'    => 36,
+    'from'  => [28,29],
   ],
   [
     'title' => 'Getränke',
-    'from'  => 37,
-    'to'    => 38,
+    'from'  => [30,31,32,33,34],
   ],
 ]
 ?>
 
 @section('content')
 
-    <div id="close-menu">
-        <a href="#close" class="scroll-top-button visible"> <i class="material-icons">close</i></a>
+    <div class="hide-on-small-only" id="close-menu">
+        <a href="javascript:history.back()" class="scroll-top-button visible"> <i class="material-icons">close</i></a>
     </div>
-    {{--<div id="page-banner" class="parallax-container valign-wrapper">--}}
-    {{--<div class="section no-pad-bot">--}}
-
-    {{--<h1 class="header center white-text text-lighten-2">Speisekarte </h1>--}}
-    {{--<div class="row center">--}}
-    {{--<h5 class="header col s12 light"></h5>--}}
-    {{--</div>--}}
-    {{--</div>--}}
-    {{--<div class="parallax"><img src="img/header_2.png" alt="background img 1"></div>--}}
-    {{--</div>--}}
 
     <div class="container">
 
@@ -95,8 +81,8 @@ $sections = [
         <div class="row">
             <div class="col s12 m9 l10">
 
-                @foreach($sections as $section)
-                    @component('menu_slot', ['from' =>$section['from'],'to' => $section['to'],])
+                @foreach($sections as $key=>$section)
+                    @component('menu_slot', ['from' =>$section['from'],'key' => $key,])
                         @slot('title')
                             {{$section['title']}}
                         @endslot
@@ -115,9 +101,9 @@ $sections = [
                     </div>
 
                     <ul class="section table-of-contents">
-                        @foreach($sections as $section)
+                        @foreach($sections as $key=>$section)
 
-                            <li><a href="#{{str_replace(' ','_',$section['title'])}}">{{$section['title']}}</a></li>
+                            <li><a href="#{{$key}}">{{$section['title']}}</a></li>
 
                         @endforeach
                     </ul>
