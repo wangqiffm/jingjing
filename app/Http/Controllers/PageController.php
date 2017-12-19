@@ -28,7 +28,7 @@ class PageController extends Controller {
    */
   public function contact(ContactFormRequest $request) {
 
-    $send_reservation_to = config('mail.to.address');
+    $send_reservation_to = config('jingjing.to.address');
 
 
     Mail::to($send_reservation_to)
@@ -41,13 +41,12 @@ class PageController extends Controller {
       'state'   => 'CA',
     ]);
 
-
   }
 
   public function reservation(Request $request) {
 
 
-    $send_reservation_to = config('mail.to.address');
+    $send_reservation_to = config('jingjing.to.address');
 
 
     Mail::to($send_reservation_to)

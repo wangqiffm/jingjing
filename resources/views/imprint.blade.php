@@ -16,7 +16,7 @@
             </div>
 
         </div>
-        <div class="parallax"><img src="img/header_2.png" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="img/f{{rand(1,6)}}.jpg" alt="Unsplashed background img 1"></div>
     </div>
 
     <div class="container">

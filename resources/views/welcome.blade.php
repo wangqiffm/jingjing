@@ -17,7 +17,6 @@
         <div class="parallax"><img src="{{asset('img/f6.jpg')}}" alt=""></div>
 
     </div>
-
     <div class="container">
         <div class="section scrollspy" id="aboutus">
 
