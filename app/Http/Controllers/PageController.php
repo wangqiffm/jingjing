@@ -28,9 +28,8 @@ class PageController extends Controller {
    */
   public function contact(ContactFormRequest $request) {
 
-    $send_reservation_to = config('mail.from.address');
+    $send_reservation_to = config('mail.to.address');
 
-    $send_reservation_to = env('MAIL_TO');
 
     Mail::to($send_reservation_to)
       ->send(new ContactSent($request->input('contact')));
@@ -48,9 +47,8 @@ class PageController extends Controller {
   public function reservation(Request $request) {
 
 
-    $send_reservation_to = config('mail.from.address');
+    $send_reservation_to = config('mail.to.address');
 
-    $send_reservation_to = env('MAIL_TO');
 
     Mail::to($send_reservation_to)
       ->send(new ReservationSent($request->input('reservation')));
