@@ -45,7 +45,7 @@
                             </div>
 
                             <div class="input-field col s12">
-                                <input placeholder="Placeholder" type="text" name="reservation[date]" class="datepicker">
+                                <input placeholder="Datum" type="text" name="reservation[date]" class="datepicker">
                                 <label for="reservation[date]">An welchem Tag ?</label>
                             </div>
 

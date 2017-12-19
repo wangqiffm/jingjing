@@ -72,6 +72,7 @@
                     dataType: 'json',
                     success: function(data){
                         $(modal_query).modal('open');
+                        $(form_id).trigger("reset");
                         sb.toggleClass('disabled');
 
                     },
