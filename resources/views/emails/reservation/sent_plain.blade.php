@@ -7,3 +7,5 @@ Uhrzeit : {{ $time }}
 Name : {{ $name }}
 
 Telefon : {{ $phone }}
+
+E-Mail : {{ $email }}

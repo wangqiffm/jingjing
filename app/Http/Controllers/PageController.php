@@ -24,33 +24,14 @@ class PageController extends Controller {
   /**
    *
    *
-   * @return Response
-   */
-  public function index() {
-    $tags = DB::select('select * from tags');
-
-    $post = Tag::all()->toArray();
-
-    dd($post);
-
-    return view('user.index', ['tags' => tags]);
-  }
-
-  /**
-   *
-   *
    * @return JsonResponse
    */
   public function contact(ContactFormRequest $request) {
-    //    $order = Order::findOrFail($orderId);
-
-    //    dump($request->input('reservation'));
 
     $send_reservation_to = config('mail.from.address');
 
     $send_reservation_to = env('MAIL_TO');
 
-//    dd($request->input('contact'));
     Mail::to($send_reservation_to)
       ->send(new ContactSent($request->input('contact')));
     $text = 'Thanks for contacting us!';
@@ -61,42 +42,11 @@ class PageController extends Controller {
       'state'   => 'CA',
     ]);
 
-    //        return redirect('/')->with('message.content', $text)->with('message.level', 'info');
-
-    //
-    //    \Mail::send('emails.contact',
-    //      array(
-    //        'name' => $request->get('name'),
-    //        'email' => $request->get('email'),
-    //        'user_message' => $request->get('message')
-    //      ), function($message)
-    //      {
-    //        $message->from('wj@wjgilmore.com');
-    //        $message->to('wj@wjgilmore.com', 'Admin')->subject('TODOParrot Feedback');
-    //      });
-
-    //      $rules = ['captcha' => 'required|captcha'];
-    //      $validator = Validator::make(Input::all(), $rules);
-    //      if ($validator->fails())
-    //      {
-    //          echo '<p style="color: #ff0000;">Incorrect!</p>';
-    //      }
-    //      else
-    //      {
-    //          echo '<p style="color: #00ff30;">Matched :)</p>';
-    //      }
-
-    //    return redirect('contact')->with('status', 'Thanks for contacting us!');
-
-    //    return \Redirect::url('/contact')
-    //      ->with('message', 'Thanks for contacting us!');
 
   }
 
   public function reservation(Request $request) {
-    //    $order = Order::findOrFail($orderId);
 
-    //    dump($request->input('reservation'));
 
     $send_reservation_to = config('mail.from.address');
 
