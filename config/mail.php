@@ -59,7 +59,9 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'reservation@jingjing-asia.de'),
         'name' => env('MAIL_FROM_NAME', 'JingJing Asia Restaurant'),
     ],
-
+    'to' => [
+        'address' => env('MAIL_TO_ADDRESS', 'jingjing-asia@live.com'),
+    ],
     /*
     |--------------------------------------------------------------------------
     | E-Mail Encryption Protocol

@@ -77,7 +77,7 @@
                     },
                     error: function(data){
                         sb.toggleClass('disabled');
-                        console.log(data.responseJSON.errors);
+
 
                         $.each(data.responseJSON.errors, function (key, value){
                             var name = key;

@@ -18,8 +18,6 @@
 
     </div>
 
-
-
     <div class="container">
         <div class="section scrollspy" id="aboutus">
 
