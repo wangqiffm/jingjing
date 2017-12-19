@@ -380,7 +380,7 @@
 @section('bottom_scripts')
 
     <script src="{{asset('store-locator/dist/')}}/assets/js/libs/handlebars.min.js"></script>
-    <script src="https://maps.google.com/maps/api/js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCjMDS2EjGYY3KSyKLksa92SK2UiVM1WJQ"></script>
     <script src="{{asset('store-locator/dist/')}}/assets/js/plugins/storeLocator/jquery.storelocator.js"></script>
     <script>
         $(function () {
