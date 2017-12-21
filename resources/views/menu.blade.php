@@ -47,7 +47,7 @@ $sections = [
     'from'  => [12,13,14,15,16,17,18],
   ],
   [
-    'title' => 'Meerfrüchte',
+    'title' => 'Meeresfrüchte',
     'from'  => [19,20,21,22,23],
   ],
   [
@@ -60,7 +60,11 @@ $sections = [
   ],
   [
     'title' => 'Beilage',
-    'from'  => [28,29],
+    'from'  => [28],
+  ],
+  [
+    'title' => 'Nachtisch',
+    'from'  => [29],
   ],
   [
     'title' => 'Getränke',

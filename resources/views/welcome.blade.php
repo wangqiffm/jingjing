@@ -34,24 +34,17 @@
 
 
             </div>
+        </div>
+            <div class="section scrollspy" id="reservation">
 
+                @include('reservation-inc')
 
+            </div>
+        <div class="section">
             <!--   Icon Section   -->
             <div class="row no-margin-bottom">
                 <div class="col s12 l4 offset-l1">
                     <div class="row ">
-
-                        <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/g1.jpg')}}"></p>
-                        </div>
-
-
-                        <div class="icon-block no-padding s12 left-align">
-                            <h5 class=" red-text text-darken-4">Sushi 10,80 €</h5>
-                            <p class="left-align light">
-                                Die kleinen appetitlichen Häppchen auch in unserer gemütlichen Sushibar. Wir servieren sämtliche Köstlichkeiten aus Heimservicekarte sowie traditionelle japanische Suppen und leckere heiße Gerichte.
-                            </p>
-                        </div>
 
 
                         <div class="icon-block no-padding s12 center-align">
@@ -99,19 +92,9 @@
                         </div>
 
 
-                        <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/g2.jpg')}}"></p>
-                        </div>
-
-                        <div class="icon-block no-padding s12 left-align">
-                            <h5 class="red-text text-darken-4">Hauptmenu</h5>
-                            <p class="light">
-                                Es stehen Ihnen wöchentlich fünf Vorspeisen und fünf Hauptspeisen zur Wahl. Wir servieren Ihnen dazu wahlweise einen Wein, ein Bier oder ein alkoholfreies Getränk und zum Abschied einen Esspresso.
-                            </p>
-                        </div>
 
                         <div class="icon-block no-padding s12 center-align">
-                            <p><img class="responsive-img" src="{{asset('img/raum.jpg')}}"></p>
+                            <p><img class="responsive-img" src="{{asset('img/jingjing.jpg')}}"></p>
                         </div>
 
 
@@ -162,11 +145,7 @@
 
         </div>
 
-        <div class="section scrollspy" id="reservation">
 
-                @include('reservation-inc')
-
-        </div>
 
         <div class="section scrollspy" id="jingjing_express">
             <div class="row">
