@@ -31,32 +31,8 @@
                         Außerdem haben wir 3 Separat VIP Räume, die sehr gut für Private Feiern unter Freunden ,der Familie oder Kollegen geeignet sind. Für hochwertige Firmenevent, Veranstaltung organisieren Wir in schöne The Squaire Gartenbereich .
                         Wir wünschen allen lieben Gästen guten Appetit.</p>
                 </div>
-                <div class="col s4 ">
-                    <h5><i class="mdi-content-send red-text text-darken-4">Küchenrenovierung</i></h5>
-<p>Aufgrund der K&uuml;chenrenovierung haben wir die warme K&uuml;che vom 25. M&auml;rz 2018 bis zum 20. April 2018 nur begrenzt ge&ouml;ffnet; mittags haben wir leider kein warmes asiatisches Buffet. Unsere Sushi-Abteilung ist davon nicht betroffen. &nbsp;</p>
-<p>Sonder&ouml;ffnungszeiten vom 25. M&auml;rz 2018 bis zum 20. April 2018:</p>
-<p>Sonntag bis Freitag: 11:00h - 23:00h</p>
-<p>Samstags geschlossen &nbsp;&nbsp;</p>
-                </div>
-                <div class="col s4 ">
-                    <h5><i class="mdi-content-send red-text text-darken-4">厨房装修</i></h5>
-<p><span style="font-family: 'Microsoft YaHei',sans-serif;">由于厨房装修，本店</span>2018<span style="font-family: 'Microsoft YaHei',sans-serif;">年</span>3<span style="font-family: 'Microsoft YaHei',sans-serif;">月</span>25<span style="font-family: 'Microsoft YaHei',sans-serif;">日至大约</span>4<span style="font-family: 'Microsoft YaHei',sans-serif;">月</span>20<span style="font-family: 'Microsoft YaHei',sans-serif;">日只能供应部分热餐。中午没有中餐自助。寿司部分不受装修影响，正常营业。</span></p>
-<p>3<span style="font-family: 'Microsoft YaHei',sans-serif;">月</span>25<span style="font-family: 'Microsoft YaHei',sans-serif;">日到</span>4<span style="font-family: 'Microsoft YaHei',sans-serif;">月</span>20<span style="font-family: 'Microsoft YaHei',sans-serif;">日营业时间</span>&nbsp;</p>
-<p><span style="font-family: 'Microsoft YaHei',sans-serif;">周日至周五</span>: 11<span style="font-family: 'Microsoft YaHei',sans-serif;">点至</span>23<span style="font-family: 'Microsoft YaHei',sans-serif;">点</span></p>
-<p><span style="font-family: 'Microsoft YaHei',sans-serif;">周六不营业</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-                </div>
-                <div class="col s4 ">
-                    <h5><i class="mdi-content-send red-text text-darken-4">Maintenance works</i></h5>
-<p>Due to the maintenance works in the kitchen from 25.03.2018 until 20.04.2018, we are expected to have limited hot food. We won't be able to serve warm asian buffet at lunch.&nbsp;</p>
-<p>Our sushi department is not affected.&nbsp;</p>
-<p>Special opening hours from March 25th to April 20th:</p>
-<p>Sunday to Friday: 11:00h - 23:00h</p>
-<p>Saturdays closed&nbsp;</p>
-                </div>			
-                <div class="col s12 center">
-					<a href="menu/karte20180420.pdf"><img class="responsive-img" src="{{asset('menu/karte0420.png')}}"></p>	
-                </div>
-			
+
+
             </div>
         </div>
             <div class="section scrollspy" id="reservation">
@@ -87,10 +63,16 @@
 
                                 Öffnungszeiten<br>
                                 Mo. - So. 10:30 - 22:00<br>
+                                Sonderöffnungszeiten<br>
+                                23.12.2017  10:00 - 22:00 Uhr<br>
+                                24.12.2017  geschlossen<br>
+                                25.12.2017  geschlossen<br>
+                                26.12.2017  10:00 - 22:00 Uhr<br>
+                                31.12.2017  10:00 - 21:00 Uhr<br>
+                                01.01.2018  12:00 - 22:00 Uhr<br>
                             </p>
                         </div>
 
-						
 
                     </div>
                 </div>
@@ -133,6 +115,26 @@
                                 E-Mail: jingjing-asia@live.com
                             </p>
                         </div>
+
+
+
+
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class=" red-text text-darken-4">Sonderöffnungszeiten</h5>
+                            <p class="light">
+                                23.12.2017  geschlossen<br>
+                                24.12.2017  geschlossen<br>
+                                25.12.2017  geschlossen<br>
+                                26.12.2017  11:00 - 23:00 Uhr<br>
+                                31.12.2017  11:00 - 21:30 Uhr<br>
+                                01.01.2018  17:30 - 23:00 Uhr<br>
+                            </p>
+                        </div>
+
+
+
+
+
 
 
                     </div>
