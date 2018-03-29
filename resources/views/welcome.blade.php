@@ -46,7 +46,14 @@
                 <div class="col s12 l4 offset-l1">
                     <div class="row ">
 
-
+                        <div class="icon-block no-padding s12 left-align">
+                            <h5 class="red-text text-darken-4">Frohe Ostern!</h5>
+                            <p class="light bold">
+                                Samstag, den 31. März 2018 haben wir geschlossen<br>
+                               
+                            </p>
+                        </div>
+						
                         <div class="icon-block no-padding s12 center-align">
                             <p><img class="responsive-img" src="{{asset('img/jingjingexpress_big.jpg')}}"></p>
                         </div>
