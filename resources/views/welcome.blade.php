@@ -47,9 +47,9 @@
                     <div class="row ">
 
                         <div class="icon-block no-padding s12 left-align">
-                            <h5 class="red-text text-darken-4">Frohe Ostern!</h5>
+                            <h5 class="red-text text-darken-4">Frohe Weihnachten</h5>
                             <p class="light bold">
-                                Samstag, den 31. März 2018 haben wir geschlossen<br>
+                                Frohe Weihnachten und ein gutes neues Jahr!<br>
                                
                             </p>
                         </div>
@@ -67,16 +67,15 @@
 
                                 60549 Frankfur am Main<br><br>
 
-
                                 Öffnungszeiten<br>
                                 Mo. - So. 10:30 - 22:00<br>
-                                Sonderöffnungszeiten<br>
-                                23.12.2017  10:00 - 22:00 Uhr<br>
-                                24.12.2017  geschlossen<br>
-                                25.12.2017  geschlossen<br>
-                                26.12.2017  10:00 - 22:00 Uhr<br>
-                                31.12.2017  10:00 - 21:00 Uhr<br>
-                                01.01.2018  12:00 - 22:00 Uhr<br>
+                            </p>
+							 <p class="light">
+								Sonderöffnungszeiten<br>
+ Montag 24.12.2018  :       10.00 - 15.00 Uhr     <br>  
+ Dienstag 25.12.2018  :       geschlossen<br>
+
+
                             </p>
                         </div>
 
@@ -89,11 +88,20 @@
 
 
                         <div class="icon-block no-padding s12 left-align">
-                            <h5 class=" red-text text-darken-4">Öffnungszeiten</h5>
+                            <h5 class=" red-text text-darken-4">Jingjing Asia Restaurant</h5>
                             <p class="light">
-                                Mo. - Fr. :11:00 - 23:00<br>
+								Öffnungszeiten<br>
+                                So. - Fr. :11:00 - 23:00<br>
                                 Sa.: 17:30 - 23:00<br>
-                                So.: 11:00 - 23:00
+
+                            </p>
+							 <p class="light">
+								Sonderöffnungszeiten<br>
+								 Sonntag 23.12.2018    :     11.00 - 15.00 Uhr<br>
+ Montag 24.12.2018    :     geschlossen<br>
+ Dienstag 25.12.2018  :       geschlossen<br>
+ Montag 31.12.2018  :       11.00 - 20.30 Uhr    <br>   
+ Dienstag   01.01.2019 :     17.00 -23.00Uhr      <br>
 
                             </p>
                         </div>
@@ -123,20 +131,6 @@
                             </p>
                         </div>
 
-
-
-
-                        <div class="icon-block no-padding s12 left-align">
-                            <h5 class=" red-text text-darken-4">Sonderöffnungszeiten</h5>
-                            <p class="light">
-                                23.12.2017  geschlossen<br>
-                                24.12.2017  geschlossen<br>
-                                25.12.2017  geschlossen<br>
-                                26.12.2017  11:00 - 23:00 Uhr<br>
-                                31.12.2017  11:00 - 21:30 Uhr<br>
-                                01.01.2018  17:30 - 23:00 Uhr<br>
-                            </p>
-                        </div>
 
 
 

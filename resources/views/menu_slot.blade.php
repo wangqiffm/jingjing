@@ -8,8 +8,8 @@
     <div class="col s12 l4">
         <div class="card">
             <div class="card-image">
-                <img class="responsive-img materialboxed" src="{{asset('menu/'.$i.'.jpg')}}"
-                     data-src="{{asset('menu/'.$i.'.jpg')}}"/>
+                <img class="responsive-img materialboxed" src="{{asset($path.$i.'.jpg')}}"
+                     data-src="{{asset($path.$i.'.jpg')}}"/>
 
             </div>
         </div>

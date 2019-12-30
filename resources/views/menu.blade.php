@@ -9,10 +9,11 @@
 
 
 <?php
+$path = 'menu2/';
 $sections = [
   [
     'title' => 'Mittagskarte',
-    'from'  => "mittagskarte",
+    'from'  =>  ["mittag1","mittag2"],
   ],
   [
     'title' => 'Sushi',
@@ -32,43 +33,43 @@ $sections = [
   ],
   [
     'title' => 'Kalte Speise',
-    'from'  => [5,6,7],
+    'from'  => [5,6],
   ],
   [
     'title' => 'Nudelsuppe',
-    'from'  => 8,
+    'from'  => [7],
   ],
   [
     'title' => 'Gebratene Reis und Nudel',
-    'from'  => [9,10,11],
+    'from'  => [8,9],
   ],
   [
     'title' => 'Fleisch',
-    'from'  => [12,13,14,15,16,17,18],
+    'from'  => [10,11,12],
   ],
   [
     'title' => 'Meeresfrüchte',
-    'from'  => [19,20,21,22,23],
+    'from'  => [13,14],
   ],
   [
     'title' => 'Topf',
-    'from'  => [24,25],
+    'from'  => [15],
   ],
   [
     'title' => 'Vegetarisch',
-    'from'  => [26,27],
-  ],
-  [
-    'title' => 'Beilage',
-    'from'  => [28],
+    'from'  => [16],
   ],
   [
     'title' => 'Nachtisch',
-    'from'  => [29],
+    'from'  => [17],
   ],
   [
     'title' => 'Getränke',
-    'from'  => [30,31,32,33,34],
+    'from'  => [18,19],
+  ],
+  [
+    'title' => 'Weine',
+    'from'  => [20,21,22],
   ],
 ]
 ?>
@@ -86,7 +87,7 @@ $sections = [
             <div class="col s12 m9 l10">
 
                 @foreach($sections as $key=>$section)
-                    @component('menu_slot', ['from' =>$section['from'],'key' => $key,])
+                    @component('menu_slot', ['from' =>$section['from'],'key' => $key,'path'=>$path])
                         @slot('title')
                             {{$section['title']}}
                         @endslot

@@ -45,6 +45,12 @@ class PageController extends Controller {
 
   public function reservation(Request $request) {
 
+  $request->validate([
+        'captcha' => 'required|size:6',
+    ],
+	[
+  'captcha.*' => "Please enter captcha",
+    ]);
 
     $send_reservation_to = config('jingjing.to.address');
 

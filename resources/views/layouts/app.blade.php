@@ -78,7 +78,8 @@
                     },
                     error: function(data){
                         sb.toggleClass('disabled');
-
+						var randomLetter = String.fromCharCode(Math.floor(Math.random() * (122 - 97)) + 97); 
+						$(".captcha_image").attr("src", $(".captcha_image").attr("src") + randomLetter); 
 
                         $.each(data.responseJSON.errors, function (key, value){
                             var name = key;

@@ -99,6 +99,11 @@
             }
         });
 
-
+		$(".captcha_image").click(
+			function () {
+				var randomLetter = String.fromCharCode(Math.floor(Math.random() * (122 - 97)) + 97); 
+				$(this).attr("src", $(this).attr("src") + randomLetter); 
+			}
+		);
   }); // end of document ready
 })(jQuery); // end of jQuery name space

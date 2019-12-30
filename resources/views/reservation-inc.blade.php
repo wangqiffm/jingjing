@@ -33,7 +33,7 @@
 
                         <div class="row">
 
-                            <div class="input-field col s12">
+                            <div class="input-field col s6">
                                 <select name="reservation[people]">
                                     <option value="1" selected>1 Person</option>
                                     @for ($i = 2; $i <= 20; $i++)
@@ -44,12 +44,7 @@
                                 <label for="reservation[people]">Wie viele Personen ?<label>
                             </div>
 
-                            <div class="input-field col s12">
-                                <input placeholder="Datum" type="text" name="reservation[date]" class="datepicker">
-                                <label for="reservation[date]">An welchem Tag ?</label>
-                            </div>
-
-                            <div class="input-field col s12">
+                            <div class="input-field col s6">
                               <?php
 
                               $options = [];
@@ -68,6 +63,13 @@
                                 </select>
                                 <label for="reservation[time]">Uhrzeit</label>
                             </div>
+							
+                            <div class="input-field col s12">
+                                <input placeholder="Datum" type="text" name="reservation[date]" class="datepicker">
+                                <label for="reservation[date]">An welchem Tag ?</label>
+                            </div>
+
+
 
                             <div class="input-field col s6">
                                 <input placeholder="Name" type="text" name="reservation[name]" class="validate" required>
@@ -82,6 +84,16 @@
                             <div class="input-field col s12">
                                 <input placeholder="E-Mail" type="email" class="validate"  name="reservation[email]" required>
                                 <label for="reservation[email]">Ihre E-Mail-Adresse</label>
+                            </div>
+
+							
+							<div class="input-field col s6">
+								<img src="{{captcha_src('flat')}}" class="captcha_image">
+							</div>
+			
+                            <div class="input-field col s6">
+                                <input placeholder="" type="text" name="captcha" class="validate" required>
+                                <label for="captcha">Bitte geben Sie den Text ein.</label>
                             </div>
 
                         </div>

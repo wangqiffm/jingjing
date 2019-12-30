@@ -104,17 +104,18 @@
                 </div>
             </div>
 
-            {{--<div class="row">--}}
-                {{--<div class="input-field col s12 m4">--}}
-                    {{--{!! captcha_img() !!}--}}
-                {{--</div>--}}
+            <div class="row">
+							<div class="input-field col s12">
+								<img src="{{captcha_src('flat')}}" class="captcha_image">
+							</div>
+			 </div>
+			 <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="" type="text" name="captcha" class="validate" required>
+                                <label for="captcha">Bitte geben Sie den angezeigten Text ein.</label>
+                            </div>
 
-                {{--<div class="input-field col s12 m8">--}}
-                    {{--<i class="material-icons prefix">info_outline</i>--}}
-                    {{--<textarea id="captcha" class="materialize-textarea" name="captcha"></textarea>--}}
-                    {{--<label for="captcha">Bitte geben Sie den angezeigten Text ein.</label>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            </div>
 
             <div class="card-action right-align">
                 <input type="reset"  class="btn-flat grey-text waves-effect no-padding">
