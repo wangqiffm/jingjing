@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="213.83.10.14">
+  <component name="PublishConfigData" serverName="test">
     <serverData>
-      <paths name="213.83.10.14">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="template" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="multi_step">
+      <paths name="185.160.250.233">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="vagrant">
+      <paths name="asia-markt-frankfurt.de">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="nanapan_magento2">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="nanapan_shopware563">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="test">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

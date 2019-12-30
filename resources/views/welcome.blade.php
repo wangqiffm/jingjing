@@ -97,11 +97,13 @@
                             </p>
 							 <p class="light">
 								Sonderöffnungszeiten<br>
-								 Sonntag 23.12.2018    :     11.00 - 15.00 Uhr<br>
- Montag 24.12.2018    :     geschlossen<br>
- Dienstag 25.12.2018  :       geschlossen<br>
- Montag 31.12.2018  :       11.00 - 20.30 Uhr    <br>   
- Dienstag   01.01.2019 :     17.00 -23.00Uhr      <br>
+                                 Montag 23.12.2019  11:00 - 15:00<br>
+                                 Dienstag 24.12.2019  geschlossen<br>
+                                 Mittwoch 25.12.2019 geschlossen<br>
+                                  
+                                 31.12.2019 11:00 - 20:30<br>
+                                 01.01.2020 17:00 - 23:00<br>
+
 
                             </p>
                         </div>
